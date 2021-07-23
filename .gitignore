@@ -1,0 +1,7 @@
+.vs/
+App.config
+Properties/
+Snake.csproj
+Snake.sln
+bin/
+obj/
