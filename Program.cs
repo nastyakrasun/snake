@@ -38,6 +38,15 @@ namespace Snake
 			System.Threading.Thread.Sleep(300);
 			snake.Move();
 
+			while(true){ 
+				if(Console.KeyAvailable)
+                {
+					ConsoleKeyInfo key = Console.ReadKey();
+					snake.HandleKey(key.Key);
+				}
+				System.Threading.Thread.Sleep(300);
+				snake.Move();
+			}
 
 			Console.ReadLine();
 		}
